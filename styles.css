@@ -19,3 +19,17 @@ font-family: 'Times New Roman', Times, serif;
 body {
     background: grey;
 }
+
+.score_count{
+
+    margin: 30px auto;
+    border: 5px solid white;
+    border-radius: 6px;
+    text-align: center;
+    width: 200px;
+    color: white;
+    font-size: 50px;
+    padding: 20px 25px;
+    font-family: 'Times New Roman', Times, serif
+
+}
