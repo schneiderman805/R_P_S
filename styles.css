@@ -60,7 +60,8 @@ body {
 
     text-align: center;
     font-weight: bold;
-    font-family: 'Times New Roman', Times, serif
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
 }
 
 .options {
@@ -72,5 +73,24 @@ body {
 .option {
     display: inline-block;
     margin: 0 25px;
+    border: 10px solid white;
+    margin: 25px 25px;
+    padding: 25px;
+    transition: all 0.8s ease-in-out;
     
+    
+}
+
+.option:hover {
+
+    background: red;
+    
+}
+
+#choice_message {
+
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 100px;
 }
