@@ -4,10 +4,18 @@
     box-sizing: border-box;
 }
 header {
-    backround: white
+background-color: white;
+padding: 20px;
 }
 
 header > h1 {
-color: blue
+color: blue;
+text-align: center;
+font-family: 'Times New Roman', Times, serif;
 
+
+}
+
+body {
+    background: grey;
 }
