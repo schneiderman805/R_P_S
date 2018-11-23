@@ -9,7 +9,7 @@ padding: 20px;
 }
 
 header > h1 {
-color: blue;
+color: black;
 text-align: center;
 font-family: 'Times New Roman', Times, serif;
 
@@ -24,12 +24,34 @@ body {
 
     margin: 30px auto;
     border: 5px solid white;
-    border-radius: 6px;
+    border-radius: 10px;
     text-align: center;
-    width: 200px;
+    width: 400px;
     color: white;
     font-size: 50px;
     padding: 20px 25px;
-    font-family: 'Times New Roman', Times, serif
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
 
+}
+
+.player{
+    background: lightgrey;
+    color: white;
+    font-size: 25px;
+    padding: 5px 15px;
+    font-family: 'Times New Roman', Times, serif
+    
+}
+
+#user_lable{
+    position: absolute;
+    top: 10px;
+    left: 5px;
+}
+
+#comp_lable{
+    position: absolute;
+    top: 10px;
+    right: 5px;
 }
