@@ -8,17 +8,54 @@ const rock_div_tag = document.getElementById("rock");
 const paper_div_tag = document.getElementById("paper");
 const scissor_div_tag = document.getElementById("scissor");
 
-rock_div_tag.addEventListener('click', function() {
-    console.log("you clicked on rock!");
+function getComputerOption() {
+    const options = ['rock', 'paper', 'scissor'];
+    const randomNumber = Math.floor(Math.random() * 3);
+    return options[randomNumber];
+}
 
-})
 
-paper_div_tag.addEventListener('click', function() {
-    console.log("you clicked on paper!");
+function game(userOption) {
+    const computerOption = getComputerOption();
+    switch (userOption + computerOption) {
+        case "rockscissor":
+        case "paperrock":
+        case "scissorpaper":
+        win();
+        break;
 
-})
+        case "rockpaper":
+        case "paperscissor":
+        case "scissorrock":
+        lose();
+        break;
 
-scissor_div_tag.addEventListener('click', function() {
-    console.log("you clicked on scissor!");
+        case "rockrock":
+        case "paperpaper":
+        case "scissorscissor":
+        draw();
+        break;
 
-})
+
+    }
+}
+
+
+function main() {
+    rock_div_tag.addEventListener('click', function() {
+        game("rock");
+
+    })
+
+    paper_div_tag.addEventListener('click', function() {
+        game("paper");
+
+    })
+
+    scissor_div_tag.addEventListener('click', function() {
+        game("scissor");
+
+    })
+}
+
+main();
